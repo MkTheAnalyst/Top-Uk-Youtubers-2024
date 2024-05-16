@@ -602,4 +602,95 @@ ORDER BY
 
 #### Output
 
-![Most subscribers](assets/images/Youtubers%20with%20the20%most%20Subscribers.PNG)
+![Most subscribers](assets/images/Youtubers%20with%20the%20most%20Subscribers.PNG)
+
+### 2. Youtubers with the most videos uploaded
+
+### Calculation breakdown 
+
+Campaign idea = sponsored video series  
+
+1. GRM Daily
+- Average views per video = 510,000
+- Product cost = $5
+- Potential units sold per video = 510,000 x 2% conversion rate = 10,200 units sold
+- Potential revenue per video = 10,200 x $5= $51,000
+- Campaign cost (11-videos @ $5,000 each) = $55,000
+- **Net profit = $51,000 - $55,000 = -$4,000 (potential loss)**
+
+b. **Manchester City**
+
+- Average views per video = 240,000
+- Product cost = $5
+- Potential units sold per video = 240,000 x 2% conversion rate = 4,800 units sold
+- Potential revenue per video = 4,800 x $5= $24,000
+- Campaign cost (11-videos @ $5,000 each) = $55,000
+- **Net profit = $24,000 - $55,000 = -$31,000 (potential loss)**
+
+b. **Yogscast**
+
+- Average views per video = 710,000
+- Product cost = $5
+- Potential units sold per video = 710,000 x 2% conversion rate = 14,200 units sold
+- Potential revenue per video = 14,200 x $5= $71,000
+- Campaign cost (11-videos @ $5,000 each) = $55,000
+- **Net profit = $71,000 - $55,000 = $16,000 (profit)**
+
+
+Best option from category: Yogscast
+
+#### SQL query 
+```sql
+/* 
+# 1. Define variables
+# 2. Create a CTE that rounds the average views per video
+# 3. Select the columns you need and create calculated columns from existing ones
+# 4. Filter results by YouTube channels
+# 5. Sort results by net profits (from highest to lowest)
+*/
+
+
+-- 1.
+DECLARE @conversionRate FLOAT = 0.02;           -- The conversion rate @ 2%
+DECLARE @productCost FLOAT = 5.0;               -- The product cost @ $5
+DECLARE @campaignCostPerVideo FLOAT = 5000.0;   -- The campaign cost per video @ $5,000
+DECLARE @numberOfVideos INT = 11;               -- The number of videos (11)
+
+
+-- 2.
+WITH ChannelData AS (
+    SELECT
+        channel_name,
+        total_views,
+        total_videos,
+        ROUND((CAST(total_views AS FLOAT) / total_videos), -4) AS rounded_avg_views_per_video
+    FROM
+        youtube_db.dbo.view_uk_youtubers_2024
+)
+
+
+-- 3.
+SELECT
+    channel_name,
+    rounded_avg_views_per_video,
+    (rounded_avg_views_per_video * @conversionRate) AS potential_units_sold_per_video,
+    (rounded_avg_views_per_video * @conversionRate * @productCost) AS potential_revenue_per_video,
+    ((rounded_avg_views_per_video * @conversionRate * @productCost) - (@campaignCostPerVideo * @numberOfVideos)) AS net_profit
+FROM
+    ChannelData
+
+
+-- 4.
+WHERE
+    channel_name IN ('GRM Daily', 'Man City', 'YOGSCAST Lewis & Simon ')
+
+
+-- 5.
+ORDER BY
+    net_profit DESC;
+```
+
+#### Output
+
+![Most videos](assets/images/youtubers%20with%20the%20most%20videos%20uploaded.png)
+
