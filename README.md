@@ -692,7 +692,7 @@ ORDER BY
 
 #### Output
 
-![Most videos](assets/images/youtubers%20with%20the%20most%20videos%20uploaded.png)
+![Most videos](assets/images/Youtubers%20with%20the%20most%20videos%20uploaded.PNG)
 
 ### 3.  Youtubers with the most views 
 
