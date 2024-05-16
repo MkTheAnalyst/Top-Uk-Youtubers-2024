@@ -787,3 +787,54 @@ ORDER BY
 #### Output
 
 ![Most views](assets/images/Youtubers%20with%20the%20most%20views.PNG)
+
+## Discovery
+
+- What did we learn?
+
+We discovered that 
+
+
+1. NoCopyrightSOunds, Dan Rhodes and DanTDM are the channnels with the most subscribers in the UK
+2. GRM Daily, Man City and Yogscast are the channels with the most videos uploaded
+3. DanTDM, Dan RHodes and Mister Max are the channels with the most views
+4. Entertainment channels are useful for broader reach, as the channels posting consistently on their platforms and generating the most engagement are focus on entertainment and music 
+
+
+
+
+## Recommendations 
+
+- What do you recommend based on the insights gathered? 
+  
+1. Dan Rhodes is the best YouTube channel to collaborate with if we want to maximize visbility because this channel has the most YouTube subscribers in the UK
+2. Although GRM Daily, Man City and Yogcasts are regular publishers on YouTube, it may be worth considering whether collaborating with them with the current budget caps are worth the effort, as the potential return on investments is significantly lower compared to the other channels.
+3. Mister Max is the best YouTuber to collaborate with if we're interested in maximizing reach, but collaborating with DanTDM and Dan Rhodes may be better long-term options considering the fact that they both have large subscriber bases and are averaging significantly high number of views.
+4. The top 3 channels to form collaborations with are NoCopyrightSounds, DanTDM and Dan Rhodes based on this analysis, because they attract the most engagement on their channels consistently.
+
+
+### Potential ROI 
+- What ROI do we expect if we take this course of action?
+
+1. Setting up a collaboration deal with Dan Rhodes would make the client a net profit of $1,065,000 per video
+2. An influencer marketing contract with Mister Max can see the client generate a net profit of $1,276,000
+3. If we go with a product placement campaign with DanTDM, this could  generate the client approximately $484,000 per video. If we advance with an influencer marketing campaign deal instead, this would make the client a one-off net profit of $404,000.
+4. NoCopyrightSounds could profit the client $642,000 per video too (which is worth considering) 
+
+
+
+
+### Action plan
+- What course of action should we take and why?
+
+Based on our analysis, we beieve the best channel to advance a long-term partnership deal with to promote the client's products is the Dan Rhodes channel. 
+
+We'll have conversations with the marketing client to forecast what they also expect from this collaboration. Once we observe we're hitting the expected milestones, we'll advance with potential partnerships with DanTDM, Mister Max and NoCopyrightSounds channels in the future.   
+
+- What steps do we take to implement the recommended decisions effectively?
+
+
+1. Reach out to the teams behind each of these channels, starting with Dan Rhodes
+2. Negotiate contracts within the budgets allocated to each marketing campaign
+3. Kick off the campaigns and track each of their performances against the KPIs
+4. Review how the campaigns have gone, gather insights and optimize based on feedback from converted customers and each channel's audiences 
